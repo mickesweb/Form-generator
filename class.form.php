@@ -181,8 +181,8 @@ class Form {
         $inputId = trim($id);
         /* Checks if the form has already been converted, 
          * otherwise make it so that it can handle image upload. */
-        if(!strstr($this->form, 'multipart/form-data')) {
-            str_replace('<form ', '<form enctype="multipart/form-data" ', $this->form);
+        if(!substr_count($this->form, 'multipart/form-data')) {
+            $this->form = str_replace('<form ', '<form enctype="multipart/form-data" ', $this->form);
         }
         //Create the file input.
         $fileForm = '<input type="file" name="'.$inputId.'" id="'.$inputId.'"';
