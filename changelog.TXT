@@ -1,0 +1,17 @@
+Version 1.0, 31/01-2012
+    First version of the class includes:
+    - Function for get the form.
+    - Function for create begining of the form.
+    - Function for add new line.
+    - Function for add label.
+    - Function for add text input.
+    - Function for add password input.
+    - Function for add other typ of input.
+    - Function for add file upload form.
+    - Function for add textarea.
+    - Function for add checkbox/radio button.
+    - Function for add select.
+    - Function for add select from database.
+    - Function for add spamfilter control.
+    - Function for add reCAPTCHA.
+    - Function for add submit and end the form.
