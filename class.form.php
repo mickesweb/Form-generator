@@ -1,13 +1,13 @@
 <?php
 /* ~class.form.php
  * 
- * @verson : 1.0
+ * @verson : 1.1
  * @contact : via mickesweb.se
  * @author :  Mikael Andersson <mikael@mickesweb.se>
  * @copyright (c) 2012, Mikael Andersson. All Rights Reserved.  
  * @license : http://creativecommons.org/licenses/by-nc-sa/3.0/
  * 
- * Last Updated: 2012-01-31
+ * Last Updated: 2012-09-09
  * INFO: A class to create an html form. Some ready for HTML5 (see http://www.w3schools.com/html5/ )
  * NOTE: Need css: .errorLabel and .errorText
  *       If use addDBSelect you need: /class.dataaccess.php version 1.0 or newer
@@ -58,6 +58,11 @@ class Form {
     /* Add a new line to html code */
     public function addNewLine() {
         $this->form .= '<br/>';
+    }
+    
+    /* Add a new html code to form html code */
+    public function addHtml($html) {
+        $this->form .= $html;
     }
 
     /* Generate the top of form.
